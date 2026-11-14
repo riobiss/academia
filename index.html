@@ -1,70 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Move+</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="media/logo.png" type="image/x-icon" />
   </head>
   <body>
     <header>
-      <h2 class="title">GYM DOG</h2>
+      <img id="logo" src="media/logo.png" alt="Logo da Academia Move+" />
       <nav>
         <ul>
-          <li><a href="">Inicio</a></li>
-          <li><a href="">Modalidades</a></li>
-          <li><a href="">Planos</a></li>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#modalidades">Modalidades</a></li>
+          <li><a href="#planos">Planos</a></li>
           <li class="dropdown">
-            <a href="">Perfil</a>
-            <div class="dropdownContent">
-              <a href="">Conta</a>
-              <a href="">Configurações</a>
-              <a href="">Sair</a>
+            <a class="dropdown-trigger" href="#perfil">Perfil</a>
+            <div class="dropdown-content">
+              <a href="#minha-conta">Minha conta</a>
+              <a href="#configuracoes">Configurações</a>
+              <a href="#sair">Sair</a>
             </div>
           </li>
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>GYM DOG</h1>
-      <div class="promocao"></div>
+    <main id="inicio">
+      <h1>Academia Move+</h1>
+      <div class="promocao" aria-label="Imagem promocional da academia"></div>
       <h2>Seja hoje quem você quis se tornar ontem</h2>
-      <div class="cards">
-        <div class="card bodybuilder">
-          <img class="image" src="media/bodybuilder.jpg" width="250px" alt="" />
-          <h2>BodyBuilder</h2>
+      <section class="cards" id="modalidades" aria-label="Modalidades">
+        <article class="card bodybuilder">
+          <img
+            class="image"
+            src="media/bodybuilder.jpg"
+            alt="Pessoa treinando musculação"
+          />
+          <h2>Musculação</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            sequi Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Tenetur possimus esse praesentium quaerat animi aliquam rem illum
-            quod sint? Quos mollitia porro placeat unde at impedit, vero iste
-            cum dolore?
+            Desenvolva força e resistência com treinos acompanhados por
+            profissionais preparados para orientar a sua evolução.
           </p>
-        </div>
-        <div class="card crossfit">
-          <img class="image" src="media/crossfit.jpg" width="250px" alt="" />
+          <button type="button">Conhecer modalidade</button>
+        </article>
+        <article class="card crossfit">
+          <img
+            class="image"
+            src="media/crossfit.jpg"
+            alt="Pessoa praticando crossfit"
+          />
           <h2>CrossFit</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel eius enim alias nisi harum ut fuga repellendus quasi adipisci officia, incidunt, perferendis quia deserunt cupiditate. Nostrum similique veritatis distinctio cumque.
+            Supere desafios em aulas dinâmicas que combinam movimentos
+            funcionais, condicionamento físico e trabalho em equipe.
           </p>
-          <button>Acessar</button>
-        </div>
-        <div class="card fitdance">
-          <img class="image" src="media/fitdance.jpg" width="250px" alt="" />
+          <button type="button">Conhecer modalidade</button>
+        </article>
+        <article class="card fitdance">
+          <img
+            class="image"
+            src="media/fitdance.jpg"
+            alt="Turma praticando fitdance"
+          />
           <h2>FitDance</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam sint, nam quibusdam accusamus alias facilis sit incidunt veniam saepe nisi? Ad repellendus laudantium reprehenderit recusandae a, doloremque pariatur doloribus illum.
+            Movimente-se no ritmo da música em aulas leves e cheias de energia
+            para cuidar do corpo enquanto se diverte.
+          </p>
+          <button type="button">Conhecer modalidade</button>
+        </article>
+      </section>
+
+      <section class="float-demo" aria-labelledby="titulo-float">
+        <h2 id="titulo-float">Treine com acompanhamento</h2>
+        <div class="float-content">
+          <img
+            class="float-image"
+            src="media/gym.jpg"
+            alt="Pessoa realizando treino de musculação"
+          />
+          <p>
+            Na Move+, cada treino pode ser adaptado à sua rotina e aos seus
+            objetivos. Nossa equipe orienta os movimentos, acompanha sua
+            evolução e ajuda você a construir uma prática mais segura e
+            constante. Assim, você ganha confiança para avançar no seu ritmo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+            ea quis voluptatum soluta expedita ab, voluptatibus nihil earum
+            necessitatibus saepe, blanditiis ipsam quia, ducimus in iusto!
+            Inventore quaerat ab atque! Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Impedit adipisci nobis in hic sunt, ea minima
+            dolore incidunt commodi minus eos libero eius inventore totam. Odit
+            et dolore dicta magni? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, sed sapiente suscipit est commodi sit! Possimus at quidem nostrum pariatur. Libero porro commodi dolores natus deleniti ipsa itaque ipsum cumque.
           </p>
         </div>
-      </div>
+      </section>
+
+      <section
+        class="overflow-demo"
+        id="planos"
+        aria-labelledby="titulo-planos"
+      >
+        <h2 id="titulo-planos">Planos Move+</h2>
+        <div class="overflow-box">
+          <p>
+            Plano Essencial: acesso à musculação e avaliação física inicial.
+            Plano Movimento: inclui aulas coletivas e acompanhamento de metas.
+            Plano Completo: tenha acesso a todas as modalidades, horários
+            flexíveis e orientações para manter sua rotina de treinos. Escolha o
+            plano que acompanha o seu momento e venha treinar com a Move+. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum similique fuga deserunt rerum illo quos cum exercitationem. Asperiores, dolorem a sequi cumque aliquam recusandae, itaque similique sit impedit, distinctio cum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptate unde eligendi laboriosam vitae quaerat? Dolorem, vel id fugiat corrupti soluta alias ratione ut ad! Id nulla dolores tenetur cupiditate!
+          </p>
+        </div>
+      </section>
     </main>
     <footer>
-      <div>
-        <p>Contato: GYMCACHORRO@gmail.com telefone: 8484737373</p>
-      </div>
-      <div>
-        <p>Instagram: GymDOG Twitter: x.com/GYMDOGMAU</p>
-      </div>
+      <p>Contato: contato@academiamovemais.com | Telefone: (84) 99999-9999</p>
+      <p>Instagram: @academiamovemais</p>
     </footer>
   </body>
 </html>
